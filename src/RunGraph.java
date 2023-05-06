@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileWriter;
 
 public class RunGraph {
     public static void main(String[] args) {
@@ -8,6 +9,8 @@ public class RunGraph {
 
         try {
             File createFile = new File("");
+            FileWriter csv = new FileWriter(createFile);
+            csv.write("V, E, Vopp, Eopp, PQopp, Comparisons, Calc(E log(V))\n");
         } catch (Exception e) {
 
         }
